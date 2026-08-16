@@ -72,12 +72,6 @@ Before running the project, make sure you have:
 Clone the project using Git:
 
 ```bash
-git clone <YOUR-GITHUB-REPO-URL>
-```
-
-For example:
-
-```bash
 git clone https://github.com/Kirti391/todo-app.git
 ```
 
