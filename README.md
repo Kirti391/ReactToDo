@@ -35,20 +35,25 @@ This project allows users to add, complete, and delete tasks through a clean and
 ```text
 todo-app/
 │
+├── 📁 public/
+│
 ├── 📁 src/
 │   ├── 📄 App.jsx
 │   ├── 📄 TodoList.jsx
 │   ├── 🎨 TodoList.css
 │   └── 📄 main.jsx
 │
-├── 📁 public/
+├── 📁 screenshots/
+│   └── 🖼️ todo-app.png
 │
+├── 📄 .gitignore
+├── 📄 eslint.config.js
+├── 📄 index.html
 ├── 📄 package.json
 ├── 📄 package-lock.json
+├── 📄 vite.config.js
 └── 📄 README.md
 ```
-
-> The exact structure may vary depending on your project setup.
 
 ---
 
@@ -60,42 +65,51 @@ Before running the project, make sure you have:
 
 * 🟢 [Node.js](https://nodejs.org/) installed
 * 📦 npm installed
+* 🐙 Git installed
 
-### 📥 Installation
+### 📥 Clone the Repository
 
-**1. Clone the repository**
+Clone the project using Git:
 
 ```bash
-git clone <your-repository-url>
+git clone <YOUR-GITHUB-REPO-URL>
 ```
 
-**2. Navigate to the project directory**
+For example:
+
+```bash
+git clone https://github.com/Kirti391/todo-app.git
+```
+
+### 📁 Navigate to the Project
 
 ```bash
 cd todo-app
 ```
 
-**3. Install dependencies**
+### 📦 Install Dependencies
 
 ```bash
 npm install
 ```
 
-**4. Install UUID**
+### 🆔 Install UUID
+
+If UUID is not already included in your dependencies:
 
 ```bash
 npm install uuid
 ```
 
-**5. Start the development server**
+### ▶️ Start the Development Server
 
 ```bash
 npm run dev
 ```
 
-**6. Open the application**
+Vite will provide a local development URL in the terminal. Open that URL in your browser to view the application.
 
-Open the local URL displayed in your terminal, usually:
+Usually:
 
 ```text
 http://localhost:5173
@@ -121,31 +135,27 @@ Each task is stored as an object:
 
 The user enters a task in the input field and clicks **Add Task**.
 
-A new task is added to the existing list with:
-
-* A task description
-* A unique UUID
-* An initial `isDone` value of `false`
+A new task is added with a unique ID generated using UUID.
 
 ### ✅ Completing a Task
 
-Clicking **Mark as Done** updates the selected task's `isDone` value to `true`.
+Clicking **Mark as Done** changes the selected task's `isDone` value to `true`.
 
-Completed tasks are displayed with a **strikethrough effect**.
+Completed tasks are displayed with a strikethrough effect.
 
 ### 🗑️ Deleting a Task
 
-Clicking **Delete** removes the selected task from the Todo list.
+Clicking **Delete** removes the selected task from the list.
 
 ### ☑️ Completing All Tasks
 
-The **Mark All as Done** button updates every task and marks them as completed.
+The **Mark All as Done** button marks every task as completed.
 
 ---
 
 ## 🎨 Design
 
-The application uses a soft, earthy color palette to create a clean and comfortable interface.
+The application uses a soft, earthy color palette.
 
 | UI Element          | Color     |
 | ------------------- | --------- |
@@ -158,15 +168,6 @@ The application uses a soft, earthy color palette to create a clean and comforta
 | 🗑️ Delete          | `#C76B5A` |
 | ☑️ Mark All as Done | `#B7C28A` |
 
-The UI also includes:
-
-* Rounded buttons
-* Hover effects
-* Task cards
-* Soft borders
-* Subtle shadows
-* Responsive styling
-
 ---
 
 ## 📸 Screenshot
@@ -178,8 +179,6 @@ The UI also includes:
 ---
 
 ## 🔮 Future Improvements
-
-Some features that could be added in future versions:
 
 * ✏️ Edit existing tasks
 * 💾 Save tasks using `localStorage`
@@ -197,13 +196,11 @@ Some features that could be added in future versions:
 
 Contributions are welcome!
 
-If you'd like to improve this project:
-
 1. 🍴 Fork the repository
 2. 🌿 Create a new branch
 3. ✏️ Make your changes
 4. 💾 Commit your changes
-5. 🚀 Push the branch
+5. 🚀 Push your branch
 6. 🔃 Create a Pull Request
 
 ---
